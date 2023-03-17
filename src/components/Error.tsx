@@ -1,6 +1,6 @@
 function Error() {
     return (
-      <div><p>Usuário não encontrado.</p></div>
+      <div><p>User not found.</p></div>
     );
   }
   
