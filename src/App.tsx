@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className={classes.app}>
-      <img src="/logo.png" alt="github-searcher-logo" className={classes.imgapp}/>
+      <img src="https://raw.githubusercontent.com/thspanhol/github-searcher/main/public/logo.png" alt="github-searcher-logo" className={classes.imgapp}/>
       <Search loadUser={loadUser} />
       {user && <User {...user} />}
       {error && <Error />}

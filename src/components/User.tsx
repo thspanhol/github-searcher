@@ -6,7 +6,7 @@ function User({login, avatar_url, followers, following, location, bio, html_url,
       <div className={classes.user}>
         <img src={avatar_url}  alt={login}/>
         <h2>{login}</h2>
-        <span><img src="/pointer.ico" alt="pointer"/>{location}</span>
+        <span><img src="https://raw.githubusercontent.com/thspanhol/github-searcher/main/public/pointer.ico" alt="pointer"/>{location}</span>
         <p>{bio}</p>
         <div>
           <h4>Followers:</h4>
