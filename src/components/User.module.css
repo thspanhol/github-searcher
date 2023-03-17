@@ -1,4 +1,88 @@
 .user
 {
-    background: olivedrab;
+    background: #2A8C82;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    width: 50%;
+    max-width: 640px;
+    min-width: 365px;
+    margin-bottom: 15px;
+}
+.user img
+{
+    border-radius: 50%;
+    width: 60%;
+    max-width: 300px;
+    border: 5px solid #275950;
+}
+.user div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0;
+}
+.user div h4:nth-child(2)
+{
+    border-right: 3px solid #275950;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+.user div h4:nth-child(4)
+{
+    border-right: 3px solid #275950;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+.user div h4:nth-child(6)
+{
+    padding: 0 5px;
+}
+.user button
+{
+    width: 45%;
+    min-width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #a0a0a0;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.user button:hover
+{
+    width: 45%;
+    min-width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #696969;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.user button a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+.user span
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.user span img
+{
+    width: 30px;
+    border: none;
+    filter: none;
 }

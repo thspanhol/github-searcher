@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className={classes.app}>
-      <h1>GitHub Searcher</h1>
+      <img src="/logo.png" alt="github-searcher-logo" className={classes.imgapp}/>
       <Search loadUser={loadUser} />
       {user && <User {...user} />}
       {error && <Error />}

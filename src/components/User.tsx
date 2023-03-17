@@ -6,17 +6,17 @@ function User({login, avatar_url, followers, following, location, bio, html_url,
       <div className={classes.user}>
         <img src={avatar_url}  alt={login}/>
         <h2>{login}</h2>
-        <span>{location}</span>
-        <h4>{bio}</h4>
+        <span><img src="/pointer.ico" alt="pointer"/>{location}</span>
+        <p>{bio}</p>
         <div>
-          <p>Seguidores:</p>
-          <p>{followers}</p>
-          <p>Seguindo:</p>
-          <p>{following}</p>
-          <p>Repositórios públicos:</p>
-          <p>{public_repos}</p>
+          <h4>Followers:</h4>
+          <h4>{followers}</h4>
+          <h4>Following:</h4>
+          <h4>{following}</h4>
+          <h4>Public Repositories:</h4>
+          <h4>{public_repos}</h4>
         </div>
-        <a href={html_url} target="blank">Acessar Perfil GitHub</a>
+        <button><a href={html_url} target="blank">Acessar Perfil GitHub</a></button>
       </div>
     );
   }

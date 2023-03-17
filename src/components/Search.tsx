@@ -10,7 +10,7 @@ function Search({loadUser}: SearchProps) {
     const [userName, setUserName] = useState("");
 
     const handleKeyDown = (e: KeyboardEvent) => {
-        if(e.key === "Enter") {
+        if(e.key === "Enter" && userName !== "") {
             loadUser(userName);
             setUserName("");
         }
@@ -18,13 +18,14 @@ function Search({loadUser}: SearchProps) {
 
     return (
       <div className={classes.search}>
-        <h2>Busque por usuário:</h2>
-        <p>Principais informações</p>
-        <input type="text" placeholder="Digite o nome do usuário" onChange={(e) => setUserName(e.target.value)} value={userName} onKeyDown={handleKeyDown} />
+        {/* <h1>Search for Users</h1> */}
+        <input type="text" placeholder="Search for Username" onChange={(e) => setUserName(e.target.value)} value={userName} onKeyDown={handleKeyDown} />
         <button onClick={() => {
+          if(userName !== "") {
             loadUser(userName);
             setUserName("");
-        }}>Pesquisar</button>
+          }
+        }}>Search</button>
       </div>
     );
   }

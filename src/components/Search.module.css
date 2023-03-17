@@ -1,4 +1,37 @@
 .search
 {
-    background: greenyellow;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+.search input
+{
+    margin: 4px 0;
+    border-radius: 500px;
+    padding: 5px;
+    border: none;
+    text-align: center;
+    outline: 0;
+}
+.search button
+{
+    margin-bottom: 10px;
+    border-radius: 500px;
+    border: none;
+    width: 50%;
+    font-weight: bold;
+    background-color: #a0a0a0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.search button:hover
+{
+    margin-bottom: 10px;
+    border-radius: 500px;
+    border: none;
+    width: 50%;
+    font-weight: bold;
+    background-color: #696969;
+    transition: 0.2s;
+    cursor: pointer;
 }
