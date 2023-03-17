@@ -16,7 +16,7 @@ function User({login, avatar_url, followers, following, location, bio, html_url,
           <h4>Public Repositories:</h4>
           <h4>{public_repos}</h4>
         </div>
-        <button><a href={html_url} target="blank">Acessar Perfil GitHub</a></button>
+        <button><a href={html_url} target="blank">Access Profile</a></button>
       </div>
     );
   }

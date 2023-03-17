@@ -46,8 +46,8 @@
 }
 .user button
 {
-    width: 45%;
-    min-width: 200px;
+    width: 30%;
+    min-width: 182px;
     padding: 5px;
     border-radius: 50px;
     background-color: #a0a0a0;
@@ -57,8 +57,8 @@
 }
 .user button:hover
 {
-    width: 45%;
-    min-width: 200px;
+    width: 30%;
+    min-width: 182px;
     padding: 5px;
     border-radius: 50px;
     background-color: #696969;
@@ -72,7 +72,7 @@
     color: black;
     font-size: 15px;
     font-weight: bold;
-    padding: 5px 15px;
+    padding: 5px 34px;
 }
 .user span
 {
